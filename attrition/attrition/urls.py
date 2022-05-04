@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 
-from pages.views import home, analyze,about,team,contacte
+
+from pages.views import home, analyze,about,team,contacte,result
 
 urlpatterns = [
     
@@ -25,6 +26,7 @@ urlpatterns = [
     path('',home , name='home'),
     path('analyze/',analyze , name='analyze'),
     path('about/',about , name='about'),
+     path('result/',result , name='result'),
    
     path('team/',team , name='team'),
     
